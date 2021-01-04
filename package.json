@@ -14,14 +14,16 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsc -D --outDir dist",
-    "dev": "yarn run build && start-storybook -p 6006",
+    "dev": "yarn build && start-storybook -p 6006",
     "lint": "eslint '*/**/*.{js,ts,tsx}'",
-    "release": "standard-version"
+    "release": "standard-version",
+    "prepublishOnly": "yarn build"
   },
   "files": [
     "dist/",
     "package.json",
     "README.md",
+    "CHANGELOG.md",
     "LICENSE"
   ],
   "main": "dist/index.js",
