@@ -1,0 +1,116 @@
+{
+  "name": "@hewes/storybook-addon-docs-graymatter",
+  "version": "0.0.1",
+  "description": "Storybook graymatter docs plugin",
+  "license": "ISC",
+  "author": "Aubrey Hewes",
+  "homepage": "https://github.com/AubreyHewes/storybook-addon-docs-graymatter#readme",
+  "bugs": {
+    "url": "https://github.com/AubreyHewes/storybook-addon-docs-graymatter/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AubreyHewes/storybook-addon-docs-graymatter.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -D --outDir dist",
+    "dev": "yarn run build && start-storybook -p 6006",
+    "lint": "eslint '*/**/*.{js,ts,tsx}'",
+    "release": "standard-version"
+  },
+  "files": [
+    "dist/",
+    "package.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "types": "dist/index.d.ts",
+  "engines": {
+    "node": "^14",
+    "yarn": "^1.22",
+    "npm": "^6"
+  },
+  "peerDependencies": {
+    "@storybook/addon-docs": "^6.1.11"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.2",
+    "loader-utils": "^2.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^9.1.2",
+    "@commitlint/config-conventional": "^9.1.2",
+    "@istanbuljs/nyc-config-typescript": "^1.0.1",
+    "@storybook/addon-a11y": "^6.1.11",
+    "@storybook/addon-actions": "^6.1.11",
+    "@storybook/addon-docs": "^6.1.11",
+    "@storybook/addon-essentials": "^6.1.11",
+    "@storybook/addon-links": "^6.1.11",
+    "@storybook/addons": "^6.1.11",
+    "@storybook/preset-create-react-app": "^3.1.5",
+    "@storybook/react": "^6.1.11",
+    "@types/loader-utils": "^2.0.1",
+    "@types/node": "^14.14.19",
+    "@types/webpack": "^4.41.25",
+    "@typescript-eslint/eslint-plugin": "^4.2.0",
+    "@typescript-eslint/parser": "^4.2.0",
+    "eslint": "^7.17.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "husky": "^4.3.0",
+    "nyc": "^15.1.0",
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.1",
+    "semantic-release": "^17.1.2",
+    "standard-version": "^9.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "standard",
+      "plugin:prettier/recommended"
+    ],
+    "plugins": [
+      "@typescript-eslint/eslint-plugin",
+      "prettier"
+    ],
+    "rules": {
+      "prettier/prettier": "error",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-destructuring": "error",
+      "prefer-spread": "error",
+      "prefer-template": "error",
+      "prefer-arrow-callback": "error",
+      "arrow-body-style": "error",
+      "prefer-promise-reject-errors": "error",
+      "prefer-rest-params": "error"
+    }
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "/build/",
+    "/dist/"
+  ],
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn run lint --fix",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
