@@ -3,7 +3,7 @@
 [![npm (scoped)](https://img.shields.io/npm/v/@hewes/storybook-addon-docs-graymatter?style=flat-square)](https://www.npmjs.com/package/@hewes/storybook-addon-docs-graymatter)
 ![node-current (scoped)](https://img.shields.io/node/v/@hewes/storybook-addon-docs-graymatter?style=flat-square)
 
-# A Storybook addon for graymatter documentation
+# A Storybook front-matter documentation addon
 
 > drop-in for integrating, for example, docusaurus or github docs
 
@@ -46,3 +46,5 @@ module.exports = {
 ## Reference
 
  * https://storybook.js.org/docs/react/addons/writing-presets
+ * https://github.com/jonschlinkert/gray-matter
+ * https://jekyllrb.com/docs/front-matter/
