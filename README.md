@@ -36,11 +36,11 @@ module.exports = {
 |Option|Description|Default|
 |---|---|---|
 |`prefix`|Prefix the title with this "Folder" i.e. a value of `Documentation` would create titles like `Documentation/Title`, which would therefore be in a sub folder.||
-|`fileNameFallback`|If this is `true` then files without graymatter will still be displayed using the relative filename as the title|`false`|
+|`fileNameFallback`|If this is `true` then files without front-matter will still be displayed using the relative filename as the title|`false`|
 
 ## TODO
 
- * [x] filename fallback for files without graymatter
+ * [x] filename fallback for files without front-matter
  * [ ] sidebar support (to support drop-in from docusaurus)
  * [ ] use `https://github.com/atlassian/gray-matter-loader`
 
@@ -49,3 +49,4 @@ module.exports = {
  * https://storybook.js.org/docs/react/addons/writing-presets
  * https://github.com/jonschlinkert/gray-matter
  * https://jekyllrb.com/docs/front-matter/
+ * https://github.com/atlassian/gray-matter-loader
