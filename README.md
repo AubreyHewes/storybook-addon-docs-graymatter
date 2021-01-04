@@ -42,6 +42,7 @@ module.exports = {
 
  * [x] filename fallback for files without graymatter
  * [ ] sidebar support (to support drop-in from docusaurus)
+ * [ ] use `https://github.com/atlassian/gray-matter-loader`
 
 ## Reference
 
