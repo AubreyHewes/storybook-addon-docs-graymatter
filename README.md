@@ -38,7 +38,11 @@ module.exports = {
 |`prefix`|Prefix the title with this "Folder" i.e. a value of `Documentation` would create titles like `Documentation/Title`, which would therefore be in a sub folder.||
 |`fileNameFallback`|If this is `true` then files without graymatter will still be displayed using the relative filename as the title|`false`|
 
-# TODO
+## TODO
 
  * [x] filename fallback for files without graymatter
  * [ ] sidebar support (to support drop-in from docusaurus)
+
+## Reference
+
+ * https://storybook.js.org/docs/react/addons/writing-presets
