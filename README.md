@@ -48,5 +48,5 @@ module.exports = {
 
  * https://storybook.js.org/docs/react/addons/writing-presets
  * https://github.com/jonschlinkert/gray-matter
- * https://jekyllrb.com/docs/front-matter/
+ * https://gohugo.io/content-management/front-matter/
  * https://github.com/atlassian/gray-matter-loader
