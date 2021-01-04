@@ -5,6 +5,8 @@
 
 # A Storybook addon for graymatter documentation
 
+> drop-in for integrating, for example, docusaurus or github docs
+
 ## Usage
 
 Install
