@@ -35,7 +35,7 @@
     "npm": "^6"
   },
   "peerDependencies": {
-    "@storybook/addon-docs": "^6.1.11"
+    "@storybook/addon-docs": "^6.1.14"
   },
   "dependencies": {
     "gray-matter": "^4.0.2",
@@ -45,14 +45,14 @@
     "@commitlint/cli": "^9.1.2",
     "@commitlint/config-conventional": "^9.1.2",
     "@istanbuljs/nyc-config-typescript": "^1.0.1",
-    "@storybook/addon-a11y": "^6.1.11",
-    "@storybook/addon-actions": "^6.1.11",
-    "@storybook/addon-docs": "^6.1.11",
-    "@storybook/addon-essentials": "^6.1.11",
-    "@storybook/addon-links": "^6.1.11",
-    "@storybook/addons": "^6.1.11",
+    "@storybook/addon-a11y": "^6.1.14",
+    "@storybook/addon-actions": "^6.1.14",
+    "@storybook/addon-docs": "^6.1.14",
+    "@storybook/addon-essentials": "^6.1.14",
+    "@storybook/addon-links": "^6.1.14",
+    "@storybook/addons": "^6.1.14",
     "@storybook/preset-create-react-app": "^3.1.5",
-    "@storybook/react": "^6.1.11",
+    "@storybook/react": "^6.1.14",
     "@types/loader-utils": "^2.0.1",
     "@types/node": "^14.14.19",
     "@types/webpack": "^4.41.25",
