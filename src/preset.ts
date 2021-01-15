@@ -10,7 +10,7 @@ export default {
   webpackFinal: async (webpackConfig: Configuration, options: PresetOptions) => {
     webpackConfig.module = webpackConfig.module || { rules: [] };
 
-    const mdxRules = webpackConfig.module?.rules.find((r) => r.test?.toString() === "/\\.(stories|story).mdx$/") ?? {
+    const mdxRules = webpackConfig.module?.rules.find((r) => r.test?.toString() === "/\\.(stories|story)\\.mdx$/") ?? {
       use: [],
     };
 
