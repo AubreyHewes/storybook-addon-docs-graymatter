@@ -3,4 +3,7 @@ id: building
 title: Building
 ---
 
-This is a test
+Create the build
+
+    yarn run build
+

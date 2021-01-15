@@ -1,7 +1,7 @@
 module.exports = {
   "stories": [
-    "../test/fixtures/**/*.md",
-    "../test/fixtures/**/*.mdx"
+    "../docs/**/*.md",
+    "../docs/**/*.mdx"
   ],
   "addons": [
     {
