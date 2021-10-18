@@ -30,7 +30,7 @@
   "typings": "dist/index.d.ts",
   "types": "dist/index.d.ts",
   "engines": {
-    "node": "^14",
+    "node": ">=14",
     "yarn": "^1.22",
     "npm": "^6"
   },
