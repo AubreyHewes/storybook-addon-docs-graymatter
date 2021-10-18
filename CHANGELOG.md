@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.4](https://github.com/AubreyHewes/storybook-addon-docs-graymatter/compare/v0.0.3...v0.0.4) (2021-10-18)
+
+
+### Features
+
+* **deps:** support latest storybook ([18f2c1e](https://github.com/AubreyHewes/storybook-addon-docs-graymatter/commit/18f2c1e062d833bc6e2afa910143d589d3fa4761))
+
 ### [0.0.3](https://github.com/AubreyHewes/storybook-addon-docs-graymatter/compare/v0.0.2...v0.0.3) (2021-10-18)
 
 
