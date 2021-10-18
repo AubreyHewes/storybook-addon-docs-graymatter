@@ -1,11 +1,7 @@
 import { PresetOptions } from "./preset";
-import { StorybookOptions } from "@storybook/core/types";
-import { PresetConfig } from "@storybook/core/dist/server/types";
+import { PresetConfig, Options } from "@storybook/core-common";
 
-export default function SBAddonGrayMatterDocs(
-  storybookOptions: StorybookOptions,
-  presetOptions: PresetOptions
-): PresetConfig[] {
+export default function SBAddonGrayMatterDocs(storybookOptions: Options, presetOptions: PresetOptions): PresetConfig[] {
   return [
     {
       name: require.resolve("./preset"),

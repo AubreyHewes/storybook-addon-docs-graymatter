@@ -1,7 +1,7 @@
-import { StorybookOptions as BaseOptions } from "@storybook/core/types/index";
 import { Configuration, RuleSetRule } from "webpack";
+import { Options } from "@storybook/core-common";
 
-export interface PresetOptions extends BaseOptions {
+export interface PresetOptions extends Options {
   prefix?: string;
   fileNameFallback?: boolean;
 }
@@ -10,7 +10,9 @@ export default {
   webpackFinal: async (webpackConfig: Configuration, options: PresetOptions) => {
     webpackConfig.module = webpackConfig.module || { rules: [] };
 
-    const mdxRules = webpackConfig.module?.rules.find((r) => r.test?.toString() === "/\\.(stories|story)\\.mdx$/") ?? {
+    const mdxRules = webpackConfig.module?.rules.find(
+      (r) => r.test?.toString() === "/(\\.)?(stories|story)\\.mdx$/"
+    ) ?? {
       use: [],
     };
 
